@@ -1,0 +1,54 @@
+---
+me:
+  birthday: 1096552800000
+skills:
+  icons:
+    - aws
+    - bash
+    - bots
+    - cloudflare
+    - css
+    - docker
+    - electron
+    - express
+    - figma
+    - firebase
+    - flask
+    - gcp
+    - git
+    - github
+    - gitlab
+    - heroku
+    - html
+    - js
+    - linux
+    - materialui
+    - md
+    - mongodb
+    - mysql
+    - nextjs
+    - nodejs
+    - postgres
+    - powershell
+    - py
+    - raspberrypi
+    - react
+    - redux
+    - regex
+    - sass
+    - ts
+    - unity
+    - workers
+  perline: 9
+statistics:
+  global:
+    count_private: true
+    hide_border: true
+    hide_rank: true
+    line_height: 20
+    theme: dark
+  top-langs:
+    count_private: true
+    hide_border: true
+    layout: compact
+    theme: dark
