@@ -1,24 +1,40 @@
-<p align="center">
-  <img src="./assets/images/wave.gif" width="64px" height="64px" />
-</p>
-<h2 align="center">Hey There! I'm Käse Fuchs</h2>
-<h3 align="center">
-  I'm a <code>18.28804</code> year old fox who writes code to make computers do
-  things
-</h3>
-<h2 align="center">My skills</h2>
-<p align="center">
+<p align="center"><a href="https://discord.com/users/507526681125322772">
   <img
-    src="https://skillicons.dev/icons?i=aws,bash,bots,cloudflare,css,docker,electron,express,figma,firebase,flask,gcp,git,github,gitlab,heroku,html,js,linux,materialui,md,mongodb,mysql,nextjs,nodejs,postgres,powershell,py,raspberrypi,react,redux,regex,sass,ts,unity,workers&perline=9"
+    alt="Discord"
+    src="https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white&style=flat-square"
   />
-</p>
-<h2 align="center">Github Stats</h2>
-<p align="center">
+</a><a href="https://gitlab.com/kasefuchs">
   <img
-    src="https://github-readme-stats.vercel.app/api/?count_private=true&hide_border=true&hide_rank=true&line_height=20&theme=dark&username=Kasefuchs"
+    alt="GitLab"
+    src="https://img.shields.io/badge/GitLab-330F63?logo=gitlab&logoColor=white&style=flat-square"
+  />
+</a><a href="https://npmjs.com/~kasefuchs">
+  <img
+    alt="NPM"
+    src="https://img.shields.io/badge/NPM-CB3837?logo=npm&logoColor=white&style=flat-square"
+  />
+</a><a href="https://t.me/kasefuchs">
+  <img
+    alt="Telegram"
+    src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white&style=flat-square"
+  />
+</a><a href="https://twitter.com/kasefuchs">
+  <img
+    alt="Twitter"
+    src="https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white&style=flat-square"
+  />
+</a></p>
+
+<picture>
+  <source
+    srcset="https://skillicons.dev/icons?i=aws,bash,bots,cloudflare,css,docker,electron,express,figma,firebase,flask,gcp,git,github,gitlab,heroku,html,js,linux,materialui,md,mongodb,mysql,nextjs,nodejs,postgres,powershell,py,raspberrypi,react,redux,regex,sass,ts,unity,workers&perline=9&theme=dark"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="https://skillicons.dev/icons?i=aws,bash,bots,cloudflare,css,docker,electron,express,figma,firebase,flask,gcp,git,github,gitlab,heroku,html,js,linux,materialui,md,mongodb,mysql,nextjs,nodejs,postgres,powershell,py,raspberrypi,react,redux,regex,sass,ts,unity,workers&perline=9&theme=light"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
   />
   <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?count_private=true&hide_border=true&layout=compact&theme=dark&username=Kasefuchs"
+    src="https://skillicons.dev/icons?i=aws,bash,bots,cloudflare,css,docker,electron,express,figma,firebase,flask,gcp,git,github,gitlab,heroku,html,js,linux,materialui,md,mongodb,mysql,nextjs,nodejs,postgres,powershell,py,raspberrypi,react,redux,regex,sass,ts,unity,workers&perline=9&theme=dark"
   />
-</p>
-<img src="https://hit.yhype.me/github/profile?user_id=64592097" alt="" />
+</picture>
