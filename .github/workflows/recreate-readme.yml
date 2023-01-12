@@ -2,8 +2,7 @@ name: Recreate README
 
 on:
   workflow_run:
-    workflows:
-      - Build @kasefuchs/readme
+    workflows: [ Build README generator ]
     types:
       - completed
   schedule:

@@ -1,4 +1,4 @@
-name: Build @kasefuchs/readme
+name: Build README generator
 
 on:
   push:
