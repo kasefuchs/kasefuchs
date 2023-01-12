@@ -1,4 +1,4 @@
-name: Recreate README
+name: Update README
 
 on:
   workflow_run:
