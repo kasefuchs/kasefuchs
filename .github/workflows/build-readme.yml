@@ -36,4 +36,4 @@ jobs:
         with:
           name: readme-generator
           path: |
-            $GITHUB_WORKSPACE/development/readme/build/release/**/*
+            ${{ github.workspace }}/development/readme/build/release/
