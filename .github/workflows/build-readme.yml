@@ -7,6 +7,8 @@ on:
     paths:
       - 'readme/**/*'
       - '.github/workflows/build-readme.yml'
+  schedule:
+    - cron: "0 9 1 * *"
   workflow_dispatch:
 
 jobs:
