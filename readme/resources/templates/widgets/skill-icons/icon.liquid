@@ -1,0 +1,15 @@
+<a href="{{ url }}">
+  <picture>
+    <source
+      srcset="https://skillicons.dev/icons?i={{ name }}&theme=dark#{{ contextHash }}"
+      media="(prefers-color-scheme: dark)"
+    />
+    <source
+      srcset="https://skillicons.dev/icons?i={{ name }}&theme=light#{{ contextHash }}"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    />
+    <img
+      src="https://skillicons.dev/icons?i={{ name }}&theme=light#{{ contextHash }}"
+    />
+  </picture>
+</a>

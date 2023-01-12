@@ -1,0 +1,149 @@
+{
+  "icons": [
+    {
+      "name": "aws",
+      "url": "https://aws.amazon.com/"
+    },
+    {
+      "name": "bash",
+      "url": "https://en.wikipedia.org/wiki/Bash_(Unix_shell)"
+    },
+    {
+      "name": "bots",
+      "url": "https://discord.com/developers/docs"
+    },
+    {
+      "name": "cloudflare",
+      "url": "https://www.cloudflare.com/"
+    },
+    {
+      "name": "css",
+      "url": "https://en.wikipedia.org/wiki/CSS"
+    },
+    {
+      "name": "docker",
+      "url": "https://www.docker.com/"
+    },
+    {
+      "name": "electron",
+      "url": "https://www.electronjs.org/"
+    },
+    {
+      "name": "express",
+      "url": "https://expressjs.com/"
+    },
+    {
+      "name": "figma",
+      "url": "https://www.figma.com/"
+    },
+    {
+      "name": "firebase",
+      "url": "https://firebase.google.com/"
+    },
+    {
+      "name": "flask",
+      "url": "https://flask.palletsprojects.com/"
+    },
+    {
+      "name": "gcp",
+      "url": "https://cloud.google.com/"
+    },
+    {
+      "name": "git",
+      "url": "https://git-scm.com/"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/"
+    },
+    {
+      "name": "gitlab",
+      "url": "https://gitlab.com/"
+    },
+    {
+      "name": "heroku",
+      "url": "https://www.heroku.com/"
+    },
+    {
+      "name": "html",
+      "url": "https://en.wikipedia.org/wiki/HTML"
+    },
+    {
+      "name": "js",
+      "url": "https://en.wikipedia.org/wiki/JavaScript"
+    },
+    {
+      "name": "linux",
+      "url": "https://en.wikipedia.org/wiki/Linux"
+    },
+    {
+      "name": "materialui",
+      "url": "https://mui.com/"
+    },
+    {
+      "name": "md",
+      "url": "https://en.wikipedia.org/wiki/Markdown"
+    },
+    {
+      "name": "mongodb",
+      "url": "https://www.mongodb.com/"
+    },
+    {
+      "name": "mysql",
+      "url": "https://www.mysql.com/"
+    },
+    {
+      "name": "nextjs",
+      "url": "https://nextjs.org/"
+    },
+    {
+      "name": "nodejs",
+      "url": "https://nodejs.org/en/"
+    },
+    {
+      "name": "postgres",
+      "url": "https://www.postgresql.org/"
+    },
+    {
+      "name": "powershell",
+      "url": "https://learn.microsoft.com/en-us/powershell/"
+    },
+    {
+      "name": "py",
+      "url": "https://www.python.org/"
+    },
+    {
+      "name": "raspberrypi",
+      "url": "https://www.raspberrypi.org/"
+    },
+    {
+      "name": "react",
+      "url": "https://reactjs.org/"
+    },
+    {
+      "name": "redux",
+      "url": "https://redux.js.org/"
+    },
+    {
+      "name": "regex",
+      "url": "https://en.wikipedia.org/wiki/Regular_expression"
+    },
+    {
+      "name": "sass",
+      "url": "https://en.wikipedia.org/wiki/Sass_(stylesheet_language)"
+    },
+    {
+      "name": "ts",
+      "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "unity",
+      "url": "https://unity.com/"
+    },
+    {
+      "name": "workers",
+      "url": "https://workers.cloudflare.com/"
+    }
+  ],
+  "perline": 6
+}

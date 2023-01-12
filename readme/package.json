@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "@actions/core": "1.8.2",
+    "@actions/github": "5.0.3",
+    "dotenv": "^16.0.3",
+    "fs-extra": "^11.1.0",
+    "html-minifier": "^4.0.0",
+    "liquidjs": "^10.4.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "object-hash": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/html-minifier": "^4.0.2",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^16",
+    "@types/object-hash": "^3.0.2",
+    "@vercel/ncc": "^0.36.0",
+    "copyfiles": "^2.4.1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.9.4",
+    "uglifyjs-folder": "^3.2.0"
+  },
+  "license": "MIT",
+  "name": "@kasefuchs/readme",
+  "private": true,
+  "scripts": {
+    "assemble:debug": "run-s build:debug copy-resources:debug",
+    "assemble:release": "run-s build:release copy-resources:release copy-license:release minify:release",
+    "build:debug": "tsc --build",
+    "build:release": "ncc build --minify --out ./build/release --license ./LICENSES ./src/index.ts",
+    "copy-license:release": "copyfiles --flat ../LICENSE ./build/release",
+    "copy-resources:debug": "copyfiles ./resources/**/* ./build/debug",
+    "copy-resources:release": "copyfiles --exclude ./resources/**/*.json ./resources/**/* ./build/release",
+    "minify:release": "uglifyjs-folder ./build/release --each --extension .js --output ./build/release --config-file ./terser.config.json"
+  },
+  "type": "commonjs",
+  "version": "1.0.0"
+}

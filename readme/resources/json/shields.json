@@ -1,0 +1,67 @@
+[
+  {
+    "badge": {
+      "color": "5865F2",
+      "name": "Discord",
+      "style": "flat-square"
+    },
+    "key": "discord",
+    "logo": {
+      "color": "white",
+      "name": "discord"
+    },
+    "url": "https://discord.com/users/507526681125322772"
+  },
+  {
+    "badge": {
+      "color": "330F63",
+      "name": "GitLab",
+      "style": "flat-square"
+    },
+    "key": "gitlab",
+    "logo": {
+      "color": "white",
+      "name": "gitlab"
+    },
+    "url": "https://gitlab.com/kasefuchs"
+  },
+  {
+    "badge": {
+      "color": "CB3837",
+      "name": "NPM",
+      "style": "flat-square"
+    },
+    "key": "npm",
+    "logo": {
+      "color": "white",
+      "name": "npm"
+    },
+    "url": "https://npmjs.com/~kasefuchs"
+  },
+  {
+    "badge": {
+      "color": "2CA5E0",
+      "name": "Telegram",
+      "style": "flat-square"
+    },
+    "key": "telegram",
+    "logo": {
+      "color": "white",
+      "name": "telegram"
+    },
+    "url": "https://t.me/kasefuchs"
+  },
+  {
+    "badge": {
+      "color": "1DA1F2",
+      "name": "Twitter",
+      "style": "flat-square"
+    },
+    "key": "twitter",
+    "logo": {
+      "color": "white",
+      "name": "twitter"
+    },
+    "url": "https://twitter.com/kasefuchs"
+  }
+]

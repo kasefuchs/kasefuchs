@@ -1,0 +1,28 @@
+[
+  {
+    "type": "statistics",
+    "options": {
+      "count_private": true,
+      "hide_border": true,
+      "hide_rank": true,
+      "line_height": 20,
+      "hide_title": true
+    },
+    "attrs": {
+      "width": 350,
+      "height": 140
+    }
+  },
+  {
+    "type": "top-languages",
+    "options": {
+      "count_private": true,
+      "hide_border": true,
+      "layout": "compact"
+    },
+    "attrs": {
+      "width": 350,
+      "height": 140
+    }
+  }
+]

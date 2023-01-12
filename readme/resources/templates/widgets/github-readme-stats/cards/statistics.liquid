@@ -1,0 +1,16 @@
+<picture>
+  <source
+    srcset="{{ host }}/api/?{{ options | encode_url_params }}&theme=dark#{{ contextHash }}"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="{{ host }}/api/?{{ options | encode_url_params }}&theme=light#{{ contextHash }}"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img
+    align="middle"
+    width="{{ attributes.width }}"
+    height="{{ attributes.height }}"
+    src="{{ host }}/api/?{{ options | encode_url_params }}&theme=light#{{ contextHash }}"
+  />
+</picture>

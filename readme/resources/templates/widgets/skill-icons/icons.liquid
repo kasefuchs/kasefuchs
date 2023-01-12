@@ -1,0 +1,12 @@
+{% comment %}
+GitHub's themed pictures works strange with skill-icons, so...
+{% endcomment %}
+
+{%- assign icons = options.icons | sort -%}
+{%- assign perline = 0 -%}
+
+{%- for icon in icons -%}
+  {%- assign perline = perline | plus: 1 -%}
+  {%- render "./icon", name: icon.name, url: icon.url -%}
+  {%- if perline == options.perline -%}{%- assign perline = 0 -%}<br/>{%- else -%}&nbsp;&nbsp;{%- endif -%}
+{%- endfor -%}
