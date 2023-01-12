@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - development
+    paths:
+      - 'readme/**/*'
+      - '.github/workflows/build-readme.yml'
   workflow_dispatch:
 
 jobs:
