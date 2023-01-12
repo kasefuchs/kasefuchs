@@ -37,7 +37,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/readme-downloader
           node ./index.js
-          cp generated/**/* $GITHUB_WORKSPACE/main
+          cp -r generated/**/* $GITHUB_WORKSPACE/main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
