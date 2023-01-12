@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - development
+      - main
     paths:
       - 'readme/**/*'
       - '.github/workflows/build-readme.yml'
