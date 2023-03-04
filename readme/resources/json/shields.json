@@ -63,5 +63,18 @@
       "name": "twitter"
     },
     "url": "https://twitter.com/kasefuchs"
+  },
+  {
+    "badge": {
+      "color": "FF4654",
+      "name": "Revolt",
+      "style": "flat-square"
+    },
+    "key": "revolt",
+    "logo": {
+      "color": "white",
+      "name": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2Ljg5MDggNy45NDA5M0MxNi44OTA4IDkuNzQyNzMgMTUuOTEwNCAxMC44MjQzIDEzLjgxODIgMTAuODI0M0gxMC4zNTQxVjUuMTIyODJIMTMuODE4OEMxNS45MTA0IDUuMTIyODIgMTYuODkwOCA2LjIzNjc0IDE2Ljg5MDggNy45NDA5M1pNMS40MTE2MiAwLjQ3MDU4MUw0Ljc2NTQ0IDUuMTMzODFWMjMuNDY4NkgxMC4zNTQ3VjE0Ljc4OEgxMS42OTQ5TDE2LjQ2NzcgMjMuNDcwNkgyMi43NzYxTDE3LjQ4MDkgMTQuMzYyQzE4Ljk1OTMgMTQuMDAxNCAyMC4yNzA1IDEzLjE0NTUgMjEuMTk3NiAxMS45MzYxQzIyLjEyNDYgMTAuNzI2NyAyMi42MTE5IDkuMjM2MjMgMjIuNTc4NyA3LjcxMTQyQzIyLjU3ODcgMy43MTQwOSAxOS43NjggMC40NzA1ODEgMTQuMTQ1OCAwLjQ3MDU4MUg0Ljc2NTQ0SDEuNDExNjJaIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMC4xMDIyMjIiLz4KPC9zdmc+Cg=="
+    },
+    "url": "https://app.revolt.chat/open/01G4623P5CV8MZ7W6XA4X6X7D3"
   }
 ]
