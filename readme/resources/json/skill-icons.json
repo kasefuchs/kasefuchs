@@ -21,6 +21,10 @@
       "url": "https://en.wikipedia.org/wiki/CSS"
     },
     {
+      "name": "dart",
+      "url": "https://dart.dev"
+    },
+    {
       "name": "docker",
       "url": "https://www.docker.com/"
     },
@@ -39,10 +43,6 @@
     {
       "name": "firebase",
       "url": "https://firebase.google.com/"
-    },
-    {
-      "name": "flask",
-      "url": "https://flask.palletsprojects.com/"
     },
     {
       "name": "gcp",
@@ -109,10 +109,6 @@
       "url": "https://learn.microsoft.com/en-us/powershell/"
     },
     {
-      "name": "py",
-      "url": "https://www.python.org/"
-    },
-    {
       "name": "raspberrypi",
       "url": "https://www.raspberrypi.org/"
     },
@@ -139,6 +135,10 @@
     {
       "name": "unity",
       "url": "https://unity.com/"
+    },
+    {
+      "name": "wasm",
+      "url": "https://webassembly.org"
     },
     {
       "name": "workers",
