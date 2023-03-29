@@ -1,8 +1,8 @@
-name: ▶️ Update README
+name: Update README
 
 on:
   workflow_run:
-    workflows: [ 🔨 Build README generator ]
+    workflows: [ Build README generator ]
     types: [ completed ]
   schedule:
     - cron: "0 * * * *"

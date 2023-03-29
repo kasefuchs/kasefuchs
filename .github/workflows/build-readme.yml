@@ -1,4 +1,4 @@
-name: 🔨 Build README generator
+name: Build README generator
 
 on:
   push:
