@@ -1,5 +1,5 @@
 import { FilterImplOptions } from "liquidjs";
-import { set, round } from "lodash";
+import { round, set } from "lodash";
 import moment_js from "moment";
 
 const moment = moment_js();

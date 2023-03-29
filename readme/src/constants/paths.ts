@@ -1,13 +1,10 @@
 import { join } from "path";
+import { isWebpack } from "../utility";
 
 export abstract class Paths {
-  protected static get isWebpack(): boolean {
-    return !require.main?.children?.length;
-  }
-
   /* Application root */
   public static get ApplicationRoot(): string {
-    return this.isWebpack ? __dirname : join(__dirname, "..", "..");
+    return isWebpack() ? __dirname : join(__dirname, "..", "..");
   }
 
   /* Application Roots */
@@ -30,6 +27,10 @@ export abstract class Paths {
 
   public static get Images(): string {
     return join(this.ResourcesRoot, "images");
+  }
+
+  public static get Data(): string {
+    return join(this.ResourcesRoot, "json");
   }
 
   /* Writable */

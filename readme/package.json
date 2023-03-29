@@ -32,7 +32,7 @@
     "build:release": "ncc build --minify --out ./build/release --license ./LICENSES ./src/index.ts",
     "copy-license:release": "copyfiles --flat ../LICENSE ./build/release",
     "copy-resources:debug": "copyfiles \"./resources/**/*\" ./build/debug",
-    "copy-resources:release": "copyfiles --exclude \"./resources/**/*.json\" \"./resources/**/*\" ./build/release",
+    "copy-resources:release": "copyfiles \"./resources/**/*\" ./build/release",
     "minify:release": "uglifyjs-folder ./build/release --each --extension .js --output ./build/release --config-file ./terser.config.json"
   },
   "type": "commonjs",
