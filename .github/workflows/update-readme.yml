@@ -1,15 +1,15 @@
-name: 'Update README'
+name: 'Update readme'
 
 on:
   workflow_run:
-    workflows: [ 'Build README generator' ]
+    workflows: [ 'Build readme generator' ]
     types: [ 'completed' ]
   schedule:
     - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
-  update:
+  '⚙️ Update readme':
     runs-on: 'ubuntu-latest'
     steps:
       - name: '💾 Checkout main branch'
@@ -38,5 +38,5 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
 
-      - name: 📤 Push new readme
-        run: 'cd $GITHUB_WORKSPACE/main && git config --local user.email "actions@github.com" && git config --local user.name "GitHub Actions" && git add . && git commit -m "Build $GITHUB_SHA" || exit 0'
+      - name: '📤 Push new readme'
+        run: 'cd $GITHUB_WORKSPACE/main && git config --local user.email "actions@github.com" && git config --local user.name "GitHub Actions" && git add . && git commit -m "Build $GITHUB_SHA" || exit 0 && git push'

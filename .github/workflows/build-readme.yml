@@ -1,4 +1,4 @@
-name: 'Build README generator'
+name: 'Build readme generator'
 
 on:
   push:
@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  '🏗️ Build':
     runs-on: 'ubuntu-latest'
     steps:
       - name: '💾 Checkout development branch'
