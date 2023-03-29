@@ -1,46 +1,41 @@
-name: Build README generator
+name: 'Build README generator'
 
 on:
   push:
     branches:
-      - development
-      - main
+      - 'development'
+      - 'main'
     paths:
       - 'readme/**/*'
       - '.github/workflows/build-readme.yml'
       - '.github/workflows/update-readme.yml'
   schedule:
-    - cron: "0 9 1 * *"
+    - cron: '0 9 1 * *'
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: 'ubuntu-latest'
     steps:
-      - name: 💾 Checkout development branch
-        uses: actions/checkout@master
+      - name: '💾 Checkout development branch'
+        uses: 'actions/checkout@master'
         with:
           ref: 'development'
           path: 'development'
 
-      - name: 🧰 Setup Node.js
-        uses: actions/setup-node@v2
+      - name: '🧰 Setup Node.js'
+        uses: 'actions/setup-node@v2'
         with:
           node-version: "16.x"
 
-      - name: 🧰 Install dependencies
-        run: |
-          cd $GITHUB_WORKSPACE/development/readme
-          yarn install
+      - name: '🧰 Install dependencies'
+        run: 'cd $GITHUB_WORKSPACE/development/readme && yarn install'
 
-      - name: 🏗️ Build generator
-        run: |
-          cd $GITHUB_WORKSPACE/development/readme
-          yarn run assemble:release
+      - name: '🏗️ Build generator'
+        run: 'cd $GITHUB_WORKSPACE/development/readme && yarn run assemble:release'
 
-      - name: 📤 Upload generator build
-        uses: actions/upload-artifact@v2
+      - name: '📤 Upload generator build'
+        uses: 'actions/upload-artifact@v2'
         with:
-          name: readme-generator
-          path: |
-            ${{ github.workspace }}/development/readme/build/release/
+          name: 'readme-generator'
+          path: '${{ github.workspace }}/development/readme/build/release/'

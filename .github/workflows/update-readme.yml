@@ -1,51 +1,42 @@
-name: Update README
+name: 'Update README'
 
 on:
   workflow_run:
-    workflows: [ Build README generator ]
-    types: [ completed ]
+    workflows: [ 'Build README generator' ]
+    types: [ 'completed' ]
   schedule:
-    - cron: "0 * * * *"
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: 'ubuntu-latest'
     steps:
-      - name: 💾 Checkout main branch
-        uses: actions/checkout@master
+      - name: '💾 Checkout main branch'
+        uses: 'actions/checkout@master'
         with:
           ref: 'main'
           path: 'main'
 
-      - name: 🧰 Setup Node.js
-        uses: actions/setup-node@v2
+      - name: '🧰 Setup Node.js'
+        uses: 'actions/setup-node@v2'
         with:
-          node-version: "16.x"
+          node-version: '16.x'
 
-      - name: 💾 Download generator build
-        uses: dawidd6/action-download-artifact@v2
+      - name: '💾 Download generator build'
+        uses: 'dawidd6/action-download-artifact@v2'
         with:
-          github_token: ${{secrets.GITHUB_TOKEN}}
-          workflow: build-readme.yml
-          workflow_conclusion: success
-          name: readme-generator
-          check_artifacts: true
-          path: readme-downloader
+          github_token: '${{secrets.GITHUB_TOKEN}}'
+          workflow: 'build-readme.yml'
+          workflow_conclusion: 'success'
+          name: 'readme-generator'
+          check_artifacts: 'true'
+          path: 'readme-downloader'
 
-      - name: ⚙️ Update readme content
-        run: |
-          cd $GITHUB_WORKSPACE/readme-downloader
-          node ./index.js
-          cp -r generated/* $GITHUB_WORKSPACE/main/
+      - name: '⚙️ Update readme content'
+        run: 'cd $GITHUB_WORKSPACE/readme-downloader && node ./index.js && cp -r generated/* $GITHUB_WORKSPACE/main/'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
 
       - name: 📤 Push new readme
-        run: |
-          cd $GITHUB_WORKSPACE/main
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add .
-          git commit -m "Build $GITHUB_SHA" || exit 0   # do not error if nothing to commit
-          git push
+        run: 'cd $GITHUB_WORKSPACE/main && git config --local user.email "actions@github.com" && git config --local user.name "GitHub Actions" && git add . && git commit -m "Build $GITHUB_SHA" || exit 0'
