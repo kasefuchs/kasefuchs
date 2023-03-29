@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  '⚙️ Update readme':
+  update-readme:
     runs-on: 'ubuntu-latest'
     steps:
       - name: '💾 Checkout main branch'
@@ -31,12 +31,12 @@ jobs:
           workflow_conclusion: 'success'
           name: 'readme-generator'
           check_artifacts: 'true'
-          path: 'readme-downloader'
+          path: 'readme-generator'
 
       - name: '⚙️ Update readme content'
-        run: 'cd $GITHUB_WORKSPACE/readme-downloader && node ./index.js && cp -r generated/* $GITHUB_WORKSPACE/main/'
+        run: 'cd $GITHUB_WORKSPACE/readme-generator && node ./index.js && cp -r generated/* $GITHUB_WORKSPACE/main/'
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
 
       - name: '📤 Push new readme'
-        run: 'cd $GITHUB_WORKSPACE/main && git config --local user.email "actions@github.com" && git config --local user.name "GitHub Actions" && git add . && git commit -m "Build $GITHUB_SHA" || exit 0 && git push'
+        run: 'cd $GITHUB_WORKSPACE/main && git config --local user.email "actions@github.com" && git config --local user.name "GitHub Actions" && git add . && git commit -m "⚙️ Update readme" || exit 0 && git push'
