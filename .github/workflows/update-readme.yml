@@ -1,8 +1,8 @@
-name: Update README
+name: ▶️ Update README
 
 on:
   workflow_run:
-    workflows: [ Build README generator ]
+    workflows: [ 🔨 Build README generator ]
     types: [ completed ]
   schedule:
     - cron: "0 * * * *"
@@ -12,18 +12,18 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: 💾 Checkout main branch
         uses: actions/checkout@master
         with:
           ref: 'main'
           path: 'main'
 
-      - name: Set up node
+      - name: 🧰 Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: "16.x"
 
-      - name: Download artifact
+      - name: 💾 Download generator build
         uses: dawidd6/action-download-artifact@v2
         with:
           github_token: ${{secrets.GITHUB_TOKEN}}
@@ -33,7 +33,7 @@ jobs:
           check_artifacts: true
           path: readme-downloader
 
-      - name: Recreate README
+      - name: ⚙️ Update readme content
         run: |
           cd $GITHUB_WORKSPACE/readme-downloader
           node ./index.js
@@ -41,7 +41,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push README
+      - name: 📤 Push new readme
         run: |
           cd $GITHUB_WORKSPACE/main
           git config --local user.email "actions@github.com"

@@ -1,4 +1,4 @@
-name: Build README generator
+name: 🔨 Build README generator
 
 on:
   push:
@@ -17,28 +17,28 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout development
+      - name: 💾 Checkout development branch
         uses: actions/checkout@master
         with:
           ref: 'development'
           path: 'development'
 
-      - name: Set up node
+      - name: 🧰 Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: "16.x"
 
-      - name: Install dependencies
+      - name: 🧰 Install dependencies
         run: |
           cd $GITHUB_WORKSPACE/development/readme
           yarn install
 
-      - name: Build
+      - name: 🏗️ Build generator
         run: |
           cd $GITHUB_WORKSPACE/development/readme
           yarn run assemble:release
 
-      - name: Upload artifact
+      - name: 📤 Upload generator build
         uses: actions/upload-artifact@v2
         with:
           name: readme-generator
