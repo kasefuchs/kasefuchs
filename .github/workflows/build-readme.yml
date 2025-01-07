@@ -24,7 +24,7 @@ jobs:
           path: 'development'
 
       - name: '🧰 Setup Node.js'
-        uses: 'actions/setup-node@v2'
+        uses: 'actions/setup-node@v4'
         with:
           node-version: "16.x"
 
@@ -35,7 +35,7 @@ jobs:
         run: 'cd $GITHUB_WORKSPACE/development/readme && yarn run assemble:release'
 
       - name: '📤 Upload generator build'
-        uses: 'actions/upload-artifact@v2'
+        uses: 'actions/upload-artifact@v4'
         with:
           name: 'readme-generator'
           path: '${{ github.workspace }}/development/readme/build/release/'
