@@ -1,5 +1,5 @@
 {%- for stat in cards -%}
   {%- assign template = './cards/' | append: stat.type -%}
   {%- assign options = stat.options | set: "username", username -%}
-  {%- render template, options: options, host: "https://github-readme-stats-kasefuchs.vercel.app", attributes: stat.attrs -%}
+  {%- render template, options: options, host: "https://github-readme-stats-ten-ivory.vercel.app", attributes: stat.attrs -%}
 {%- endfor -%}
